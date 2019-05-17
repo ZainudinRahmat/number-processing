@@ -1,5 +1,5 @@
 function min(arr) {
-
+return 1
 }
 
 function max(arr) {
