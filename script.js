@@ -1,10 +1,12 @@
 function min(arr) {
-return 1
-}
-
+  arr.sort(function(a,b){return a - b})
+  return arr[0]
+  }
+  
 function max(arr) {
-
-}
+  arr.sort(function(a,b){return b - a})
+  return arr[0]
+  }
 
 function mean(arr) {
 
