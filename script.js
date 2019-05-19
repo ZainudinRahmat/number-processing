@@ -16,13 +16,25 @@ function mean(arr) {
     return total / arr.length
     }
 
-function odds(arr) {
-
-}
-
-function evens(arr) {
-
-}
+    function odds(arr) {
+      var result = []
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 1) {
+          result.push(arr[i])
+        }
+      }
+      return result
+    }
+    
+    function evens(arr) {
+      var result = []
+      for (var i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+          result.push(arr[i])
+        }
+      }
+      return result
+    }
 
 function numberProcessing(arr) {
   return 'Min: ' + min(arr) + ', Max: ' + max(arr) + ', Mean: ' + mean(arr) + ', Odds: ' + odds(arr) + ', Evens: ' + evens(arr)
